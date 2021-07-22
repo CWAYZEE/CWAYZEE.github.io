@@ -53,24 +53,187 @@ img {
   color: white;
 }
 
-.circle {
+/*shapes*/
+
+
+.br {
+    padding: 50px;
+    height: 190px;
+    width: 175px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 0, 0, 0.514);
+    position: absolute;
+    top: 51%;
+    right: 50%;
+    transition: transform .2s;
+
+  }
+
+  .br1 {
+    padding: 50px;
+    height: 190px;
+    width: 175px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 0, 0, 0.514);
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transition: transform .2s;
+
+  }
+
+  .br2 {
+    padding: 50px;
+    height: 190px;
+    width: 175px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 0, 0, 0.514);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transition: transform .2s;
+
+  }
+
+  .br3 {
+    padding: 50px;
+    height: 190px;
+    width: 175px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100%;
+    background-color: rgba(255, 0, 0, 0.514);
+    position: absolute;
+    top: 99.5%;
+    right: 50%;
+    transition: transform .2s;
+  }
+
+  .br3:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: red;
+  }
+
+  .br2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: red;
+  }
+
+  .br1:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: red;
+  }
+  
+  .br:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: red;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .circle {
+    padding: 50px;
     height: 175px;
     width: 175px;
-    background-color: rgba(243, 215, 174, 0.726);
+    background-color: rgb(243, 215, 174);
     border-radius: 50%;
-    margin-top: 225%;
+    transition: transform .2s;
+    margin-top: 220%;
+    position: relative;
   }
-
-
-  a {
-      text-decoration: none;
+  
+  .circle:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: rgb(250, 192, 106);
   }
-
+  
+  
+  
+    a {
+        text-decoration: none;
+    }
+  
   h1 {
+    color: rgb(255, 255, 255);
     font-size: 3.8em;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-    position: absolute;
-    margin-left: 10%;
+    top: 6%;
+    right: 5%;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    top: 6%;
+    right: 6%;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#text {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    top: 6%;
+    right: 30%;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    top: 30%;
+    right: 40%;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text3 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    top: 30%;
+    right: 25%;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text4 {
+
+    font-size: 1.25em;
+    top: 145%;
+    left: 0%;
+    position:absolute;
+    color: seashell;
+    
+}
+
+#text5 {
+
+}
+
+#text6 {
+    
+}
