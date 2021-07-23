@@ -1,26 +1,28 @@
+
+
 h2 {
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5em;
-    margin-left: 5%;
-    margin-right: 5%;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
 body {
-    background-color: rgb(9, 152, 247);
+  background-color: rgb(9, 152, 247);
 }
 
 html {
-    background-color: black;
+  background-color: rgb(9, 152, 247);
 }
 
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 img {
-    width:auto
+  width:auto
 }
 
 
@@ -28,48 +30,122 @@ img {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cat-yard-cat-cat-sleeping-preview.jpg");
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cat-yard-cat-cat-sleeping-preview.jpg");
 
-  /* Set a specific height */
-  height: 50%;
+/* Set a specific height */
+height: 50%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
 }
-
-/* Place text in the middle of the image */
 
 /*shapes*/
 
 
 .br {
   padding: 50px;
-  height: 175px;
+  height: 190px;
   width: 175px;
-  border-top-left-radius: 50% 100%;
+  border-top-left-radius: 100%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  color: rgba(82, 3, 3, 0.616);
+  background-color: rgba(255, 0, 0, 0.514);
   position: absolute;
-  z-index: 25;
-  
+  top: 51%;
+  right: 50%;
+  transition: transform .2s;
+
 }
 
+.br1 {
+  padding: 50px;
+  height: 190px;
+  width: 175px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(255, 0, 0, 0.514);
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transition: transform .2s;
+
+}
+
+.br2 {
+  padding: 50px;
+  height: 190px;
+  width: 175px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 0;
+  background-color: rgba(255, 0, 0, 0.514);
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transition: transform .2s;
+
+}
+
+.br3 {
+  padding: 50px;
+  height: 190px;
+  width: 175px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 100%;
+  background-color: rgba(255, 0, 0, 0.514);
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transition: transform .2s;
+}
+
+.br3:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: red;
+}
+
+.br2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: red;
+}
+
+.br1:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: red;
+}
+
+.br:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: red;
+}
 
 * {
   box-sizing: border-box;
@@ -79,7 +155,7 @@ img {
   padding: 50px;
   height: 175px;
   width: 175px;
-  background-color: rgba(243, 215, 174, 0.726);
+  background-color: rgb(243, 215, 174);
   border-radius: 50%;
   transition: transform .2s;
   margin-top: 220%;
@@ -90,6 +166,7 @@ img {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: rgb(250, 192, 106);
 }
 
 
@@ -102,10 +179,203 @@ h1 {
   color: rgb(255, 255, 255);
   font-size: 3.8em;
   top: 6%;
+  right: 5%;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  top: 6%;
   right: 6%;
   position:absolute;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#text {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  top: 6%;
+  right: 30%;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-     
+#text2 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  top: 30%;
+  right: 40%;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text3 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  top: 30%;
+  right: 25%;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text4 {
+
+  font-size: 1.25em;
+  top: 145%;
+  left: 0%;
+  position:absolute;
+  color: seashell;
+  
+}
+
+#text5 {
+  font-size: 1.25em;
+  top: 145%;
+  left: 0%;
+  position:absolute;
+  color: seashell;
+}
+
+#text6 {
+  font-size: 1.25em;
+  top: 145%;
+  left: 0%;
+  position:absolute;
+  color: seashell;
+}
+
+#text7 {
+  font-size: 1.25em;
+  top: 145%;
+  left: 0%;
+  position:absolute;
+  color: seashell;
+}
+
+#text8 {
+  font-size: 1.25em;
+  top: 145%;
+  left: 0%;
+  position:absolute;
+  color: seashell;
+}
+
+#text9 {
+  font-size: 2em;
+  top: 85%;
+  left: 5%;
+  position:absolute;
+  color: rgb(0, 0, 0);
+}
+
+#text10 {
+  font-size: 2em;
+  top: 85%;
+  left: 35%;
+  position:absolute;
+  color: rgb(0, 0, 0);
+}
+
+#text11 {
+  font-size: 2em;
+  top: 85%;
+  left: 65%;
+  position:absolute;
+  color: rgb(0, 0, 0);
+}
+
+
+legend {
+font-size: 4em;
+}
+
+#card {
+  width: 80px;
+}
+
+/*Cat Images*/
+#Persian {
+  width: 200px;
+  top: 75%;
+  left: 5%;
+  position:absolute;
+}
+
+#Munchkin {
+  width: 200px;
+  top: 78%;
+  left: 35%;
+  position:absolute;
+}
+
+#Birman {
+  width: 200px;
+  top: 78%;
+  left: 65%;
+  position:absolute;
+}
+
+/*Buttons*/
+
+#b1 {
+  top: 95%;
+  left: 8%;
+  position:absolute;
+  width: 100px;
+}
+
+#b2 {
+  top: 30%;
+  left: 30%;
+  position:absolute;
+  width: 200px;
+}
+
+#b3 {
+  top: 95%;
+  left: 38%;
+  position:absolute;
+  width: 100px;
+}
+
+#b4 {
+  top: 95%;
+  left: 68%;
+  position:absolute;
+  width: 100px;
+}
+
+input:not([type='radio']) {
+  background-color: rgb(255, 218, 165);
+}
+
+input:not([type='radio']):focus:valid {
+  background: rgb(215,255,215) url(Images/sb_valid.png) right no-repeat;
+}
+input:not([type='radio']):focus:invalid {
+  background: rgb(255,245,215) url(Images/sb_invalid.png) right no-repeat;
+}
+
+#shadow {
+  top: 30%;
+  left: 50%;
+  position:absolute;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
